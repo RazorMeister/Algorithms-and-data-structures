@@ -1,0 +1,38 @@
+#include "Gui.h"
+#include <algorithm>
+#include <string>
+
+Gui::Gui() {
+    dataStructures.push_back(new FirstDataStructure());
+    dataStructures.push_back(new Stack());
+
+	setMenu();
+}
+
+void Gui::callback(string id, vector<int> params) {
+	try {
+		int idInt = stoi(id);
+		runStructure(idInt);
+	}
+	catch (...) {
+	}
+}
+
+void Gui::setMenu() {
+	menu.setMeta("GUI", "Algorithms and data structures | MINI PW 2020");
+	menu.setCallbackClass(this);
+
+	for_each(dataStructures.begin(), dataStructures.end(), [this](DataStructureAbstract* structure) {
+		menu.addChoice(to_string(structure->getId()), structure->getName(), structure->getDesc());
+		});
+}
+
+void Gui::start() {
+	menu.run();
+}
+
+void Gui::runStructure(int id) {
+	id--;
+	if (id >= 0 && id < dataStructures.size())
+		dataStructures[id]->start();
+}
