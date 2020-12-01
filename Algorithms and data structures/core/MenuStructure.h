@@ -17,6 +17,8 @@ private:
 
     string menuName = "";
     string menuDesc = "";
+
+    vector<string> resultBuffer;
     
     ChoiceAbstract* callbackClass;
 
@@ -28,6 +30,7 @@ private:
 
     choice* getChoice(string id);
     vector<int> handleChoiceParams(choice* ch);
+    void printResult();
 public:
     MenuStructure();
 
@@ -35,6 +38,7 @@ public:
     void setCallbackClass(ChoiceAbstract* callbackClass);
     void addChoice(string id, string name, string desc = "", int paramsCount = 0);
     void addChoice(int id, string name, string desc = "", int paramsCount = 0);
+    void addResult(string txt);
     void run();
 };
 

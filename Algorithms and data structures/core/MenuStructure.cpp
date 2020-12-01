@@ -27,12 +27,14 @@ void MenuStructure::addChoice(int id, string name, string desc, int paramsCount)
 	 string ch;
 
 	 do {
+		 printResult();
 		 printMeta();
 		 printChoices();
+
 		 cin >> ch;
 		 system("cls");
 		 auto chosen = getChoice(ch);
-		 
+
 		 if (chosen) {
 			 cout << "Your choice: ";
 			 printChoice(ch);
@@ -104,4 +106,22 @@ MenuStructure::choice* MenuStructure::getChoice(string id) {
 		 if (c->paramsCount > 0) cout << "\tParamsCount: " << c->paramsCount << endl;
 		 cout << endl;
 	});
+ }
+
+ void MenuStructure::addResult(string txt) {
+	 resultBuffer.push_back(txt);
+ }
+
+ void MenuStructure::printResult() {
+	 if (resultBuffer.size() > 0)
+		 cout << "Results: " << endl;
+
+	 for_each(resultBuffer.begin(), resultBuffer.end(), [](string txt) {
+		 cout << "\t" << txt << endl;
+	});
+
+	 if (resultBuffer.size() > 0)
+		 cout << endl << endl;
+
+	 resultBuffer.clear();
  }

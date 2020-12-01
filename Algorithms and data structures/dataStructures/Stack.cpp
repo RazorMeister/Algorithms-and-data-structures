@@ -14,7 +14,6 @@ Stack::Stack() {
 void Stack::callback(string id, vector<int> params) {
 	try {
 		int idInt = stoi(id);
-		cout << "Result: " << endl;
 		switch (idInt) {
 			case 1:
 				push(params[0]);
@@ -43,39 +42,39 @@ void Stack::callback(string id, vector<int> params) {
 
 void Stack::push(int el) {
 	if (top >= (MAX_ELEMENTS - 1)) {
-		cout << "Error, stack overflow" << endl;
+		menu.addResult("Error, stack overflow");
 	}
 	else {
 		stack[++top] = el;
-		cout << "Success" << endl;
+		menu.addResult("Success");
 	}
 }
 
 void Stack::pop() {
 	if (top < 0) {
-		cout << "Stack is empty" << endl;
+		menu.addResult("Stack is empty");
 	}
+
 	else {
-		cout << "Popped:  " << stack[top--] << endl;
+		menu.addResult("Popped:  " + to_string(stack[top--]));
 	}
 }
 
 void Stack::isEmpty() {
 	if (top < 0)
-		cout << "Stack is empty" << endl;
+		menu.addResult("Stack is empty");
 	else
-		cout << "Stack is NOT empty" << endl;
+		menu.addResult("Stack is NOT empty");
 }
 
 void Stack::print() {
 	for (int i = top; i >= 0; i--)
-		cout << stack[i] << endl;
+		menu.addResult(to_string(stack[i]));
 
-	cout << endl;
 }
 
 void Stack::clear() {
 	top = -1;
 
-	cout << "Stacked has been cleaned" << endl;
+	menu.addResult("Stacked has been cleaned");
 }

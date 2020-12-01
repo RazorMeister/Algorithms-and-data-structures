@@ -142,7 +142,6 @@
     <ClCompile Include="core\DataStructureAbstract.cpp" />
     <ClCompile Include="core\Gui.cpp" />
     <ClCompile Include="core\MenuStructure.cpp" />
-    <ClCompile Include="dataStructures\FirstDataStructure.cpp" />
     <ClCompile Include="dataStructures\Stack.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -151,7 +150,6 @@
     <ClInclude Include="core\DataStructureAbstract.h" />
     <ClInclude Include="core\Gui.h" />
     <ClInclude Include="core\MenuStructure.h" />
-    <ClInclude Include="dataStructures\FirstDataStructure.h" />
     <ClInclude Include="dataStructures\Stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

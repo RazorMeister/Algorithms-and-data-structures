@@ -3,7 +3,6 @@
 #include <string>
 
 Gui::Gui() {
-    dataStructures.push_back(new FirstDataStructure());
     dataStructures.push_back(new Stack());
 
 	setMenu();
