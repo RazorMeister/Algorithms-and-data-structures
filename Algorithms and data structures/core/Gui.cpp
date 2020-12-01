@@ -4,6 +4,8 @@
 
 Gui::Gui() {
     dataStructures.push_back(new Stack());
+    dataStructures.push_back(new Queue
+	());
 
 	setMenu();
 }
