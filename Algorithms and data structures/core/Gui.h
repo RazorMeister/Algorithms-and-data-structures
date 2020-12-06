@@ -6,6 +6,7 @@
 #include "../dataStructures/Queue.h"
 #include "../dataStructures/UnorderedList.h"
 #include "../dataStructures/OrderedList.h"
+#include "../dataStructures/Heap.h"
 #include "MenuStructure.h"
 
 using namespace std;

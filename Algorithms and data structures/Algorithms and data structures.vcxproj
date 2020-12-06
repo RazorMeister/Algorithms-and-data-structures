@@ -142,6 +142,7 @@
     <ClCompile Include="core\DataStructureAbstract.cpp" />
     <ClCompile Include="core\Gui.cpp" />
     <ClCompile Include="core\MenuStructure.cpp" />
+    <ClCompile Include="dataStructures\Heap.cpp" />
     <ClCompile Include="dataStructures\OrderedList.cpp" />
     <ClCompile Include="dataStructures\Queue.cpp" />
     <ClCompile Include="dataStructures\Stack.cpp" />
@@ -153,6 +154,7 @@
     <ClInclude Include="core\DataStructureAbstract.h" />
     <ClInclude Include="core\Gui.h" />
     <ClInclude Include="core\MenuStructure.h" />
+    <ClInclude Include="dataStructures\Heap.h" />
     <ClInclude Include="dataStructures\OrderedList.h" />
     <ClInclude Include="dataStructures\Queue.h" />
     <ClInclude Include="dataStructures\Stack.h" />
