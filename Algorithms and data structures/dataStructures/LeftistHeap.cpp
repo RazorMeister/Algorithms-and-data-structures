@@ -4,8 +4,8 @@
 LeftistHeap::LeftistHeap() { 
 	setName(name, desc); 
 
-	menu.addChoice("1", "Insert", "O(sqrt n)", 1);
-	menu.addChoice("2", "DeleteMax", "O(sqrt n)");
+	menu.addChoice("1", "Insert", "O(log n)", 1);
+	menu.addChoice("2", "DeleteMax", "O(log n)");
 	menu.addChoice("3", "IsEmpty", "O(1)");
 	menu.addChoice("4", "Print", "O(n)");
 	menu.addChoice("5", "Clear", "Reset all data");
