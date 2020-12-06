@@ -8,6 +8,7 @@
 #include "../dataStructures/OrderedList.h"
 #include "../dataStructures/Heap.h"
 #include "../dataStructures/Beap.h"
+#include "../dataStructures/LeftistHeap.h"
 #include "../dataStructures/BST.h"
 #include "../dataStructures/AVL.h"
 #include "MenuStructure.h"
