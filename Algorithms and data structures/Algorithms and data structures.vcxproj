@@ -142,8 +142,10 @@
     <ClCompile Include="core\DataStructureAbstract.cpp" />
     <ClCompile Include="core\Gui.cpp" />
     <ClCompile Include="core\MenuStructure.cpp" />
+    <ClCompile Include="dataStructures\OrderedList.cpp" />
     <ClCompile Include="dataStructures\Queue.cpp" />
     <ClCompile Include="dataStructures\Stack.cpp" />
+    <ClCompile Include="dataStructures\UnorderedList.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -151,8 +153,10 @@
     <ClInclude Include="core\DataStructureAbstract.h" />
     <ClInclude Include="core\Gui.h" />
     <ClInclude Include="core\MenuStructure.h" />
+    <ClInclude Include="dataStructures\OrderedList.h" />
     <ClInclude Include="dataStructures\Queue.h" />
     <ClInclude Include="dataStructures\Stack.h" />
+    <ClInclude Include="dataStructures\UnorderedList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
