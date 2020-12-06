@@ -7,6 +7,7 @@ Gui::Gui() {
     dataStructures.push_back(new Queue());
     dataStructures.push_back(new UnorderedList());
     dataStructures.push_back(new OrderedList());
+	dataStructures.push_back(new BST());
 
 	setMenu();
 }
