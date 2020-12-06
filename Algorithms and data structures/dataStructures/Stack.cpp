@@ -4,10 +4,10 @@
 Stack::Stack() { 
 	setName(name, desc); 
 
-	menu.addChoice("1", "Push", "", 1);
-	menu.addChoice("2", "Pop");
-	menu.addChoice("3", "IsEmpty");
-	menu.addChoice("4", "Print");
+	menu.addChoice("1", "Push", "O(1)", 1);
+	menu.addChoice("2", "Pop", "O(1)");
+	menu.addChoice("3", "IsEmpty", "O(1)");
+	menu.addChoice("4", "Print", "O(n)");
 	menu.addChoice("5", "Clear", "Reset all data");
 }
 

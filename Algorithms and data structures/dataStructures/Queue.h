@@ -4,8 +4,8 @@
 
 class Queue : public DataStructureAbstract {
 private:
-    const string name = "List";
-    const string desc = "List";
+    const string name = "Queue";
+    const string desc = "Queue";
 
     struct node {
         int value;

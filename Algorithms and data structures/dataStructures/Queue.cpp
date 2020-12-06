@@ -4,10 +4,10 @@
 Queue::Queue() { 
 	setName(name, desc); 
 
-	menu.addChoice("1", "Put", "", 1);
-	menu.addChoice("2", "Get");
-	menu.addChoice("3", "IsEmpty");
-	menu.addChoice("4", "Print");
+	menu.addChoice("1", "Put", "O(1)", 1);
+	menu.addChoice("2", "Get", "O(n)");
+	menu.addChoice("3", "IsEmpty", "O(1)");
+	menu.addChoice("4", "Print", "O(n)");
 	menu.addChoice("5", "Clear", "Reset all data");
 }
 
