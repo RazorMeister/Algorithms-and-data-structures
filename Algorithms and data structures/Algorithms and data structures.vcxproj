@@ -144,6 +144,7 @@
     <ClCompile Include="core\MenuStructure.cpp" />
     <ClCompile Include="dataStructures\AVL.cpp" />
     <ClCompile Include="dataStructures\Beap.cpp" />
+    <ClCompile Include="dataStructures\BinomialQueue.cpp" />
     <ClCompile Include="dataStructures\BST.cpp" />
     <ClCompile Include="dataStructures\Heap.cpp" />
     <ClCompile Include="dataStructures\LeftistHeap.cpp" />
@@ -161,6 +162,7 @@
     <ClInclude Include="core\MenuStructure.h" />
     <ClInclude Include="dataStructures\AVL.h" />
     <ClInclude Include="dataStructures\Beap.h" />
+    <ClInclude Include="dataStructures\BinomialQueue.h" />
     <ClInclude Include="dataStructures\BST.h" />
     <ClInclude Include="dataStructures\Heap.h" />
     <ClInclude Include="dataStructures\LeftistHeap.h" />

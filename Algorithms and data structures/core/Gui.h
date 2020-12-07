@@ -10,6 +10,7 @@
 #include "../dataStructures/Beap.h"
 #include "../dataStructures/LeftistHeap.h"
 #include "../dataStructures/SkewHeap.h"
+#include "../dataStructures/BinomialQueue.h"
 #include "../dataStructures/BST.h"
 #include "../dataStructures/AVL.h"
 #include "MenuStructure.h"
