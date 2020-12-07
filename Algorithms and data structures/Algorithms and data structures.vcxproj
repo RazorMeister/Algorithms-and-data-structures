@@ -149,6 +149,7 @@
     <ClCompile Include="dataStructures\LeftistHeap.cpp" />
     <ClCompile Include="dataStructures\OrderedList.cpp" />
     <ClCompile Include="dataStructures\Queue.cpp" />
+    <ClCompile Include="dataStructures\SkewHeap.cpp" />
     <ClCompile Include="dataStructures\Stack.cpp" />
     <ClCompile Include="dataStructures\UnorderedList.cpp" />
     <ClCompile Include="main.cpp" />
@@ -165,6 +166,7 @@
     <ClInclude Include="dataStructures\LeftistHeap.h" />
     <ClInclude Include="dataStructures\OrderedList.h" />
     <ClInclude Include="dataStructures\Queue.h" />
+    <ClInclude Include="dataStructures\SkewHeap.h" />
     <ClInclude Include="dataStructures\Stack.h" />
     <ClInclude Include="dataStructures\UnorderedList.h" />
   </ItemGroup>

@@ -10,6 +10,7 @@ Gui::Gui() {
     dataStructures.push_back(new Heap());
     dataStructures.push_back(new Beap());
     dataStructures.push_back(new LeftistHeap());
+    dataStructures.push_back(new SkewHeap());
 	dataStructures.push_back(new BST());
 	dataStructures.push_back(new AVL());
 
