@@ -12,6 +12,7 @@ Gui::Gui() {
     dataStructures.push_back(new LeftistHeap());
     dataStructures.push_back(new SkewHeap());
     dataStructures.push_back(new BinomialQueue());
+    dataStructures.push_back(new FibonacciQueue());
 	dataStructures.push_back(new BST());
 	dataStructures.push_back(new AVL());
 

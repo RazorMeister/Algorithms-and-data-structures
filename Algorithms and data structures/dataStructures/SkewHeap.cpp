@@ -50,22 +50,16 @@ SkewHeap::node* SkewHeap::hUnion(SkewHeap::node *p1, SkewHeap::node *p2) {
 
 	if (p1->key > p2->key) {
 		p = p1;
-
-		node* q = p->left;
-		p->left = p->right;
-		p->right = q;
-
-		p->left = hUnion(p1->left, p2);
+		p->right = hUnion(p->right, p2);
 	}
 	else {
 		p = p2;
-
-		node* q = p->left;
-		p->left = p->right;
-		p->right = q;
-
-		p->left = hUnion(p2->left, p1);
+		p->right = hUnion(p->right, p1);
 	}
+
+	node* q = p->left;
+	p->left = p->right;
+	p->right = q;
 
 	return p;
 }

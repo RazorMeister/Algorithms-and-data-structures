@@ -45,7 +45,7 @@ void BinomialQueue::putTree(BinomialQueue::node*& main, BinomialQueue::node* p) 
 		node* last = main->prev;
 		last->next = p;
 		p->next = nullptr;
-		p->prev = main;
+		p->prev = last;
 		main->prev = p;
 	}
 	else {
